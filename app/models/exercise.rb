@@ -11,6 +11,11 @@ class Exercise < ActiveRecord::Base
     self.count
   end
 
+  def self.calories_today
+    exercises_today = self.all.select{|e| e.date == Date.today}
+    exercises_today.reduce(0){|sum, e| sum + e.calories_burned}
+  end
+
 
 
 end
