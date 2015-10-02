@@ -6,10 +6,6 @@ class WeightsController < ApplicationController
     @weights = Weight.all
   end
 
-  # GET /weights/1
-  def show
-  end
-
   # GET /weights/new
   def new
     @weight = Weight.new
