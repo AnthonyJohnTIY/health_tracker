@@ -9,9 +9,11 @@
 -------------------<br><br>
 
 - Your Current Weight: <br>
-- Steps taken Today:  <br>
+<p>So far today you have walked <%= @steps_today %> miles.</p>
 - Total Calories Consumed Today: <br>
 - Exercises Performed Today: <br>
 </div>
 
-<p>Find me in app/views/dashboard/home.html.erb</p>
+
+
+<%= link_to "View All Steps", steps_path %>
