@@ -8,5 +8,18 @@ class ExerciseTest < ActiveSupport::TestCase
     assert a.save
   end
 
+  test "Calories Today Method" do
+    assert_equal 250, Exercise.calories_today
+  end
+
+  test "total method" do
+    assert_equal 4, Exercise.total
+  end
+
+  test "total today method" do
+  assert_equal 2, Exercise.total_today
+  end
+
+  
 
 end

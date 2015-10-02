@@ -2,12 +2,24 @@
 
 one:
   exercise_type_id: 1
-  name: MyString
-  date: 2015-10-02
-  calories_burned: 1
+  name: Bench Press
+  date: <%= Date.today %>
+  calories_burned: 150
 
 two:
   exercise_type_id: 1
-  name: MyString
-  date: 2015-10-02
-  calories_burned: 1
+  name: Pull Ups
+  date: <%= Date.today %>
+  calories_burned: 100
+
+three:
+  exercise_type_id: 2
+  name: Pull Ups
+  date: <%= Date.today - 2.days %>
+  calories_burned: 100
+
+four:
+  exercise_type_id: 2
+  name: Pull Ups
+  date: <%= Date.today - 3.days %>
+  calories_burned: 100
