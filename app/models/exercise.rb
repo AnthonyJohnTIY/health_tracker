@@ -1,5 +1,5 @@
 class Exercise < ActiveRecord::Base
-  # belongs_to: exercise_type
+  belongs_to :exercise_type
 
   validates :exercise_type_id, presence: true
   validates :name, presence: true
