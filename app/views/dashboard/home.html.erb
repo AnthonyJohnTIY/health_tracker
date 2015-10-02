@@ -1,19 +1,17 @@
 
 <div align = center>
-<h1> :. HEALTH TRACKER .: </h1><br><br>
-<img src= "http://theinvisibleneighbors.com/wp-content/uploads/2015/01/Heart-health-graphic.jpg"><br><br>
-<h3> An app used to store information on your weight, daily steps taken, calories consumed, and exercises performed.</h3>
-=======================================================================================
+  <h1> :. HEALTH TRACKER .: </h1><br><br>
+  <img src= "http://theinvisibleneighbors.com/wp-content/uploads/2015/01/Heart-health-graphic.jpg"><br><br>
+  <h3> An app used to store information on your weight, daily steps taken, calories consumed, and exercises performed.</h3>
+  =======================================================================================
 
-<h2> :. Stats .: </h2>
--------------------<br><br>
-
-- Your Current Weight: <%= @current_weight %><br>
-- Steps taken Today:  <br>
-- Total Calories Consumed Today: <br>
-- Exercises Performed Today: <br>
+  <h2> :. Stats .: </h2>
+  -------------------<br><br>
+  <p>Your Current Weight: <%= @current_weight %><p>
+  <p>So far today you have walked <%= @steps_today %> miles.</p>
+  <p>Total Calories Consumed Today: </p>
+  <p>Exercises Performed Today: </p>
 </div>
 
-<%= link_to "New Weight", new_weight_path %>
-
-<p>Find me in app/views/dashboard/home.html.erb</p>
+<%= link_to "View Weights", weights_path %>
+<%= link_to "View Steps", steps_path %>
