@@ -9,5 +9,5 @@ two:
   date: <%= Date.today - 1.day %>
 
 long:
-  number_of_steps: 4224
+  number_of_steps: 5491
   date: <%= Date.today %>

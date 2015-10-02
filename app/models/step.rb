@@ -5,6 +5,6 @@ class Step < ActiveRecord::Base
   end
 
   def self.miles_today
-    (self.daily_total / 2112).round(2)
+    (self.daily_total.to_f / 2112).round(2)
   end
 end
