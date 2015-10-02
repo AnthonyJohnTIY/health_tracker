@@ -8,10 +8,12 @@
 <h2> :. Stats .: </h2>
 -------------------<br><br>
 
-- Your Current Weight: <br>
+- Your Current Weight: <%= @current_weight %><br>
 - Steps taken Today:  <br>
 - Total Calories Consumed Today: <br>
 - Exercises Performed Today: <br>
 </div>
+
+<%= link_to "New Weight", new_weight_path %>
 
 <p>Find me in app/views/dashboard/home.html.erb</p>

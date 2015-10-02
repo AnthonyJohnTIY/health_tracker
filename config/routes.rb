@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :weights
   root 'dashboard#home'
 
   get '/home' => 'dashboard#home'
