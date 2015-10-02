@@ -7,6 +7,10 @@ class Exercise < ActiveRecord::Base
   validates :calories_burned, presence: true
 
 
+  def self.total
+    self.count
+  end
+
 
 
 end
