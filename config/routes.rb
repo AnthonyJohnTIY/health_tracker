@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :exercises
   root 'dashboard#home'
 
   get '/home' => 'dashboard#home'
+
+  resources :exercises
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
