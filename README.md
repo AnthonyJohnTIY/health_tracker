@@ -4,5 +4,4 @@
 <h3> An app used to store information on your weight, daily steps taken, calories consumed, and exercises performed.</h3><br><br><br>
 </div>
 
-
-<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/171aa43f-0234-4a0d-bc9c-3835298af624" id="yv~filOIsM3P"></iframe></div>
+<img src="https://www.lucidchart.com/publicSegments/view/7b3b3393-5391-4a5d-85a8-0181b5fa7249/image.png"></img>
