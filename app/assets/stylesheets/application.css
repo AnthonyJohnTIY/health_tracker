@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.dashboard {
+  text-align: center;
+}

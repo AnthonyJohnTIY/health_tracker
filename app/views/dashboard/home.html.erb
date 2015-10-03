@@ -1,5 +1,4 @@
-
-<div align = center>
+<div class="dashboard">
   <h1> :. HEALTH TRACKER .: </h1><br><br>
   <img src= "http://theinvisibleneighbors.com/wp-content/uploads/2015/01/Heart-health-graphic.jpg"><br><br>
   <h3> An app used to store information on your weight, daily steps taken, calories consumed, and exercises performed.</h3>
@@ -9,9 +8,13 @@
   -------------------<br><br>
   <p>Your Current Weight: <%= @current_weight %><p>
   <p>So far today you have walked <%= @steps_today %> miles.</p>
+  <p>Total Number of Exercises Today: <%= @exercise_total_today %></p>
+  <p>Net Caloric Intake Today: </p>
   <p>Total Calories Consumed Today: </p>
-  <p>Exercises Performed Today: </p>
-</div>
+  <p>Total Calories Burned Today: <%= @calories_burned_today %></p>
+  <p>Total Number of Exercises Ever: <%= @exercise_total_ever %></p>
 
-<%= link_to "View Weights", weights_path %>
-<%= link_to "View Steps", steps_path %>
+  <%= link_to "View Exercises", exercises_path %> |
+  <%= link_to "View Weights", weights_path %> |
+  <%= link_to "View Steps", steps_path %>
+</div>

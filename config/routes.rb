@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :weights
   resources :steps
+  resources :exercises
 
   root 'dashboard#home'
 
