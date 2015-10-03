@@ -9,12 +9,15 @@
   <p>Your Current Weight: <%= @current_weight %><p>
   <p>So far today you have walked <%= @steps_today %> miles.</p>
   <p>Total Number of Exercises Today: <%= @exercise_total_today %></p>
-  <p>Net Caloric Intake Today: </p>
-  <p>Total Calories Consumed Today: </p>
+  <p>Net Caloric Intake Today: <%= @calories_consumed_today - @calories_burned_today %> </p>
+  <p>Total Amount of Calories Consumed Today: <%= @calories_consumed_today %> </p>
   <p>Total Calories Burned Today: <%= @calories_burned_today %></p>
   <p>Total Number of Exercises Ever: <%= @exercise_total_ever %></p>
 
-  <%= link_to "View Exercises", exercises_path %> |
+  =======================<br>
+  <%= link_to 'View Exercises', exercises_path %> |
+  <%= link_to 'All Calorie Consumption', calorie_consumptions_path %>  |
   <%= link_to "View Weights", weights_path %> |
   <%= link_to "View Steps", steps_path %>
+  <br>=======================
 </div>

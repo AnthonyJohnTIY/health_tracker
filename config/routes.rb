@@ -2,10 +2,12 @@ Rails.application.routes.draw do
   resources :weights
   resources :steps
   resources :exercises
+  resources :calorie_consumptions
 
   root 'dashboard#home'
-
   get '/home' => 'dashboard#home'
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
