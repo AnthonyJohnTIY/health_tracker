@@ -17,5 +17,10 @@ class CalorieConsumptionTest < ActiveSupport::TestCase
   assert_equal 2, CalorieConsumption.total_today
   end
 
+  test "Net Caloric Intake" do
+    net_intake = CalorieConsumption.consumption_today - Exercise.calories_today
+    assert_equal 100, net_intake
+  end
+
 
 end
