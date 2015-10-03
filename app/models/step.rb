@@ -1,7 +1,8 @@
 class Step < ActiveRecord::Base
+  extend DailySelection
+
   def self.daily_total
-    today = self.all.select{|s| s.date == Date.today}
-    today.reduce(0){|sum, t| sum + t.number_of_steps}
+    daily_items.reduce(0){|sum, t| sum + t.number_of_steps}
   end
 
   def self.miles_today

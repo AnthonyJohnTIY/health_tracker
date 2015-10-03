@@ -17,9 +17,13 @@ class ExerciseTest < ActiveSupport::TestCase
   end
 
   test "total today method" do
-  assert_equal 2, Exercise.total_today
+    assert_equal 2, Exercise.total_today
   end
 
-  
+  test "get calories burned average" do
+    assert_equal 112.50, Exercise.average_calories_burned
+  end
+
+
 
 end
