@@ -22,5 +22,10 @@ class CalorieConsumptionTest < ActiveSupport::TestCase
     assert_equal 100, net_intake
   end
 
+  test "get caloric intake average" do
+    assert_equal 150, CalorieConsumption.average_caloric_intake
+  end
+
+
 
 end

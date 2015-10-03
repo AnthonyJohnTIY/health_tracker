@@ -7,6 +7,8 @@ class DashboardController < ApplicationController
     @exercise_total_ever = Exercise.total
     @exercise_total_today = Exercise.total_today
     @calories_consumed_today = CalorieConsumption.consumption_today
+    @average_calories_burned = Exercise.average_calories_burned
+    @average_caloric_intake = CalorieConsumption.average_caloric_intake
 
   end
 end

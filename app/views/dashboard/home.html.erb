@@ -13,10 +13,12 @@
   <p>Total Amount of Calories Consumed Today: <%= @calories_consumed_today %> </p>
   <p>Total Calories Burned Today: <%= @calories_burned_today %></p>
   <p>Total Number of Exercises Ever: <%= @exercise_total_ever %></p>
+  <p>Average Caloric Intake per Meal: <%= @average_caloric_intake %></p>
+  <p>Average Calories Burned per Exercise: <%= @average_calories_burned %> </p>
 
   =======================<br>
   <%= link_to 'View Exercises', exercises_path %> |
-  <%= link_to 'All Calorie Consumption', calorie_consumptions_path %>  |
+  <%= link_to 'All Caloric Intake', calorie_consumptions_path %>  |
   <%= link_to "View Weights", weights_path %> |
   <%= link_to "View Steps", steps_path %>
   <br>=======================
