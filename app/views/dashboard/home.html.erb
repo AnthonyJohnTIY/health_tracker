@@ -8,12 +8,12 @@
   -------------------<br><br>
   <p>Your Current Weight: <%= @current_weight %><p>
   <p>So far today you have walked <%= number_with_precision(@steps_today, precision: 2) %> miles.</p>
-  <p>Total Number of Exercises Today: <%= @exercise_total_today %></p>
   <p>Net Caloric Intake Today: <%= @calories_consumed_today - @calories_burned_today %> </p>
   <p>Total Amount of Calories Consumed Today: <%= @calories_consumed_today %> </p>
-  <p>Total Calories Burned Today: <%= @calories_burned_today %></p>
-  <p>Total Number of Exercises Ever: <%= @exercise_total_ever %></p>
   <p>Average Caloric Intake per Meal: <%= number_with_precision(@average_caloric_intake, precision: 2) %></p>
+  <p>Total Number of Exercises Today: <%= @exercise_total_today %></p>
+  <p>Total Number of Exercises Ever: <%= @exercise_total_ever %></p>
+  <p>Total Calories Burned Today: <%= @calories_burned_today %></p>
   <p>Average Calories Burned per Exercise: <%= number_with_precision(@average_calories_burned, precision: 2) %> </p>
 
   =======================<br>

@@ -18,7 +18,11 @@ class CalorieConsumption < ActiveRecord::Base
   end
 
   def self.average_caloric_intake
-    all.reduce(0){|sum, e| sum + e.amount}/total.to_f
+    if self.count == 0
+      "No Meals Entered"
+    else
+      all.reduce(0){|sum, e| sum + e.amount}/total.to_f
+    end
   end
 
 

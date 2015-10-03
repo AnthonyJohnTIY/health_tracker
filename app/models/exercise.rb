@@ -21,7 +21,11 @@ class Exercise < ActiveRecord::Base
   end
 
   def self.average_calories_burned
-    all.reduce(0){|sum, e| sum + e.calories_burned}/total.to_f
+    if self.count == 0
+      "No Exercises Entered"
+    else
+      all.reduce(0){|sum, e| sum + e.calories_burned}/total.to_f
+    end
   end
 
 
