@@ -8,14 +8,18 @@
 <h2> :. Stats .: </h2>
 -------------------<br><br>
 
+- Total Number of Exercises Ever: <%= @total %> <br>
 - Your Current Weight: <br>
 - Steps taken Today:  <br>
-- Total Number of Calories Consumed Today: <br>
+- Total Number of Things Eaten Today: <%= @number_eaten_today %> <br>
+- Total Amount of Calories Consumed Today: <%= @calories_consumed_today %> <br>
 - Total Number of Exercises Today: <%= @total_today %> <br>
 - Total Calories Burned Today: <%= @calories_today %> <br>
-- Total Number of Exercises Ever: <%= @total %> <br><br><br>
+- Total Number of Calories Consumed Today: <%= @total %> <br>
+<br><br>
 
 =======================<br>
 <%= link_to 'All Exercises', exercises_path %> |
+<%= link_to 'All Calorie Consumption', calorie_consumptions_path %>  |
 <br>=======================
 </div>

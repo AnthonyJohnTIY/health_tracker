@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   root 'dashboard#home'
 
   get '/home' => 'dashboard#home'
+  get '/exercises' => 'exercises#index'
+  get '/calorie_consumptions' => 'calorie_consumptions#index'
 
   resources :exercises
+  resources :calorie_consumptions
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

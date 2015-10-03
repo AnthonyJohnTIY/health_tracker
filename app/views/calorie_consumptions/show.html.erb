@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @calorie_consumption.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @calorie_consumption.amount %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @calorie_consumption.date %>
+</p>
+
+<%= link_to 'Edit', edit_calorie_consumption_path(@calorie_consumption) %> |
+<%= link_to 'Back', calorie_consumptions_path %>

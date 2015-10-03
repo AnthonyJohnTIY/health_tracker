@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Calorie Consumptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calorie_consumptions.each do |calorie_consumption| %>
+      <tr>
+        <td><%= calorie_consumption.name %></td>
+        <td><%= calorie_consumption.amount %></td>
+        <td><%= calorie_consumption.date %></td>
+        <td><%= link_to 'Show', calorie_consumption %></td>
+        <td><%= link_to 'Edit', edit_calorie_consumption_path(calorie_consumption) %></td>
+        <td><%= link_to 'Destroy', calorie_consumption, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+=======================<br>
+<%= link_to 'New Calorie consumption', new_calorie_consumption_path %>  |
+<%= link_to 'Return To Dashbord', root_path %>
+<br>=======================

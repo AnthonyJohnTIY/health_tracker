@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Cheeseburger
+  date: <%= Date.today %>
+  amount: 250
+
+two:
+  name: Ice Cream
+  date: <%= Date.today %>
+  amount: 100
+
+three:
+  name: French Fries
+  date: <%= Date.today - 2.days %>
+  amount: 150
+
+four:
+  name: Cookies
+  date: <%= Date.today - 3.days %>
+  amount: 100
