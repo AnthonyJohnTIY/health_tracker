@@ -18,10 +18,7 @@ class CalorieConsumption < ActiveRecord::Base
   end
 
   def self.average_caloric_intake
-    # all_exercises = Exercise.all
-    # all_exercises.reduce(0){|sum, e| sum + e.calories_burned}/Exercise.count
-    #
-    all.reduce(0){|sum, e| sum + e.amount}/total.to_f.round(2)
+    all.reduce(0){|sum, e| sum + e.amount}/total.to_f
   end
 
 
